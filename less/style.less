@@ -1,0 +1,95 @@
+.box pre { font-family: 'Source Code Pro', Monaco, Consolas, monospace, "Andale Mono", "lucida console", "Courier New";}
+
+// These are color variables unique to this theme.
+// They can be edited or removed/replaced.
+// Hues
+@syntax-uno:    250;
+@syntax-duo:    30;
+
+// Uno hue
+@uno-1: hsl(@syntax-uno, 100%, 96%);
+@uno-2: hsl(@syntax-uno,  98%, 86%);
+@uno-3: hsl(@syntax-uno,  96%, 78%);
+@uno-4: hsl(@syntax-uno,  12%, 46%);
+
+// Duo hue
+@duo-1: hsl(@syntax-duo, 100%, 80%);
+@duo-2: hsl(@syntax-duo,  72%, 62%);
+@duo-3: hsl(@syntax-duo,   6%, 46%);
+
+// Base colors
+@syntax-fg:               @uno-2;
+@syntax-bg:               hsl(@syntax-uno, 14%, 18%);
+@syntax-accent:           hsl(@syntax-duo, 100%, 66%);
+@syntax-guide:            lighten(@syntax-bg, 10%);
+@syntax-selection:        lighten(@syntax-bg, 12%);
+@syntax-selection-gutter: lighten(@syntax-bg, 3%);
+@syntax-cursor-line:      fade(@syntax-selection, 26%);
+
+@text: hsl(@syntax-uno, 24%, 74%);
+
+
+// THE THEME
+
+.box, .editor .top-boxes, .CodeMirror-gutter-wrapper, #example-embed {
+  background: @syntax-bg;
+
+  // css/js: curly brackets,symbol,separators {}():;,
+  .cm-tag.cm-bracket,
+  .cm-operator,
+  .cm-string-2    { color: @uno-4 }
+
+  // html: plain text
+  pre              { color: @text }
+
+  // html: class, id, src
+  .cm-attribute   {color: @syntax-fg}
+
+  // css: @include,  [this]
+  // js: variable name
+  .cm-def         { color: @syntax-accent }
+
+  .cm-variable-2  { color: @uno-2 }
+
+  #html-box .cm-atom,
+  // string, "class-name", "src/path"
+  .cm-string       { color: @duo-1 }
+
+  // getElementbyId, CSS properties
+  .cm-property,
+  // @font-face
+  .cm-meta         { color: @uno-3 }
+
+  // html: tag names between brackets  h1, p, img 
+  .cm-tag          { color: @uno-1 }
+
+  .cm-variable,
+  .cm-keyword,
+  // css: .class, h1, h2
+  .cm-qualifier,
+  #css-box .cm-tag { color: @uno-1 }
+
+  // js: var, function
+  .cm-keyword,
+  // e.g. #id
+  .cm-atom,
+  #css-box .cm-variable { color: @duo-1 }
+
+  // 20px
+  .cm-number           { color: @duo-1 }
+
+  /* e.g. // comments */
+  @commentColor: @syntax-selection;
+  .cm-comment           { color: fade(@uno-4,80%) }
+  .CodeMirror-linenumber { color: fade(@commentColor,50%) }
+
+
+
+  // CodeMirror selectors that don't appear to work on CodePen
+  // Leaving for reference just in case
+  .cm-strong,
+  .cm-em,
+  .cm-builtin,
+  .cm-header,
+  .cm-unit { color: red; text-decoration: underline }
+}

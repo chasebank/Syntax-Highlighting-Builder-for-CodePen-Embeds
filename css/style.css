@@ -1,0 +1,147 @@
+.box pre {
+  font-family: 'Source Code Pro', Monaco, Consolas, monospace, "Andale Mono", "lucida console", "Courier New";
+}
+.box,
+.editor .top-boxes,
+.CodeMirror-gutter-wrapper,
+#example-embed {
+  background: #2a2734;
+  /* e.g. // comments */
+}
+.box .cm-tag.cm-bracket,
+.editor .top-boxes .cm-tag.cm-bracket,
+.CodeMirror-gutter-wrapper .cm-tag.cm-bracket,
+#example-embed .cm-tag.cm-bracket,
+.box .cm-operator,
+.editor .top-boxes .cm-operator,
+.CodeMirror-gutter-wrapper .cm-operator,
+#example-embed .cm-operator,
+.box .cm-string-2,
+.editor .top-boxes .cm-string-2,
+.CodeMirror-gutter-wrapper .cm-string-2,
+#example-embed .cm-string-2 {
+  color: #6c6783;
+}
+.box pre,
+.editor .top-boxes pre,
+.CodeMirror-gutter-wrapper pre,
+#example-embed pre {
+  color: #b2adcd;
+}
+.box .cm-attribute,
+.editor .top-boxes .cm-attribute,
+.CodeMirror-gutter-wrapper .cm-attribute,
+#example-embed .cm-attribute {
+  color: #c4b8fe;
+}
+.box .cm-def,
+.editor .top-boxes .cm-def,
+.CodeMirror-gutter-wrapper .cm-def,
+#example-embed .cm-def {
+  color: #ffa852;
+}
+.box .cm-variable-2,
+.editor .top-boxes .cm-variable-2,
+.CodeMirror-gutter-wrapper .cm-variable-2,
+#example-embed .cm-variable-2 {
+  color: #c4b8fe;
+}
+.box #html-box .cm-atom,
+.editor .top-boxes #html-box .cm-atom,
+.CodeMirror-gutter-wrapper #html-box .cm-atom,
+#example-embed #html-box .cm-atom,
+.box .cm-string,
+.editor .top-boxes .cm-string,
+.CodeMirror-gutter-wrapper .cm-string,
+#example-embed .cm-string {
+  color: #ffcc99;
+}
+.box .cm-property,
+.editor .top-boxes .cm-property,
+.CodeMirror-gutter-wrapper .cm-property,
+#example-embed .cm-property,
+.box .cm-meta,
+.editor .top-boxes .cm-meta,
+.CodeMirror-gutter-wrapper .cm-meta,
+#example-embed .cm-meta {
+  color: #a391fd;
+}
+.box .cm-tag,
+.editor .top-boxes .cm-tag,
+.CodeMirror-gutter-wrapper .cm-tag,
+#example-embed .cm-tag {
+  color: #eeebff;
+}
+.box .cm-variable,
+.editor .top-boxes .cm-variable,
+.CodeMirror-gutter-wrapper .cm-variable,
+#example-embed .cm-variable,
+.box .cm-keyword,
+.editor .top-boxes .cm-keyword,
+.CodeMirror-gutter-wrapper .cm-keyword,
+#example-embed .cm-keyword,
+.box .cm-qualifier,
+.editor .top-boxes .cm-qualifier,
+.CodeMirror-gutter-wrapper .cm-qualifier,
+#example-embed .cm-qualifier,
+.box #css-box .cm-tag,
+.editor .top-boxes #css-box .cm-tag,
+.CodeMirror-gutter-wrapper #css-box .cm-tag,
+#example-embed #css-box .cm-tag {
+  color: #eeebff;
+}
+.box .cm-keyword,
+.editor .top-boxes .cm-keyword,
+.CodeMirror-gutter-wrapper .cm-keyword,
+#example-embed .cm-keyword,
+.box .cm-atom,
+.editor .top-boxes .cm-atom,
+.CodeMirror-gutter-wrapper .cm-atom,
+#example-embed .cm-atom,
+.box #css-box .cm-variable,
+.editor .top-boxes #css-box .cm-variable,
+.CodeMirror-gutter-wrapper #css-box .cm-variable,
+#example-embed #css-box .cm-variable {
+  color: #ffcc99;
+}
+.box .cm-number,
+.editor .top-boxes .cm-number,
+.CodeMirror-gutter-wrapper .cm-number,
+#example-embed .cm-number {
+  color: #ffcc99;
+}
+.box .cm-comment,
+.editor .top-boxes .cm-comment,
+.CodeMirror-gutter-wrapper .cm-comment,
+#example-embed .cm-comment {
+  color: rgba(108, 103, 131, 0.8);
+}
+.box .CodeMirror-linenumber,
+.editor .top-boxes .CodeMirror-linenumber,
+.CodeMirror-gutter-wrapper .CodeMirror-linenumber,
+#example-embed .CodeMirror-linenumber {
+  color: rgba(69, 66, 87, 0.5);
+}
+.box .cm-strong,
+.editor .top-boxes .cm-strong,
+.CodeMirror-gutter-wrapper .cm-strong,
+#example-embed .cm-strong,
+.box .cm-em,
+.editor .top-boxes .cm-em,
+.CodeMirror-gutter-wrapper .cm-em,
+#example-embed .cm-em,
+.box .cm-builtin,
+.editor .top-boxes .cm-builtin,
+.CodeMirror-gutter-wrapper .cm-builtin,
+#example-embed .cm-builtin,
+.box .cm-header,
+.editor .top-boxes .cm-header,
+.CodeMirror-gutter-wrapper .cm-header,
+#example-embed .cm-header,
+.box .cm-unit,
+.editor .top-boxes .cm-unit,
+.CodeMirror-gutter-wrapper .cm-unit,
+#example-embed .cm-unit {
+  color: red;
+  text-decoration: underline;
+}
